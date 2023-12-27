@@ -1,0 +1,320 @@
+/* 在body內滑鼠游標 */
+body {
+  cursor: url(mouse_cursor_icon/divercursor.png),auto;
+}
+
+/* main區塊的背景顏色 */
+main {
+  /* background-color: #F2ECE9; */
+  /* background: linear-gradient(-180deg, rgb(255, 255, 255), rgb(228, 251, 252)); */
+  background: linear-gradient(-180deg, rgb(255, 255, 255), rgb(209, 253, 255));
+  /* background: linear-gradient(-180deg, rgb(255, 255, 255), rgb(219, 252, 254)); */
+  /* background: linear-gradient(-180deg, rgb(255, 255, 255), rgb(222, 254, 255)); */
+
+
+}
+
+/* 上方導覽列 */
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  /* 固定住導覽列在最上面 */
+  z-index: 5;
+  /* 重疊順序 */
+  background-color: #fcfdfd;
+  box-shadow: 0 8px 6px -10px rgba(0, 0, 0, 1);
+  transition: all 0.5s ease-in-out;
+}
+
+/* 上方導覽列的標題logo區塊 */
+header div.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  flex: 6 1 400px;
+}
+
+/* 上方導覽列logo旁的網站大標題 */
+header div.logo h1 {
+  letter-spacing: 1px;
+  /*字母間距*/
+  /* word-spacing: 1px; */
+  /* 文字間距 */
+}
+
+/* 上方導覽列的logo圖 */
+header div.logo img {
+  width: 2.5vw;
+  height: 2.5vw;
+  padding: 10px;
+}
+
+/* 上方導覽列整體區塊 */
+header nav {
+  flex: 2 1 400px;
+}
+
+/* 上方導覽列區塊內的列表 */
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  /* 分散排列 */
+  letter-spacing: 3px;
+}
+
+/* 上方導覽列區塊內的列表連結文字樣式 */
+header nav ul li a {
+  color: #09777d;
+  text-decoration: none;
+  /* 消除連結底線 */
+  font-size: 1.25rem;
+}
+
+/* 上方導覽列區塊內列表的hover樣式 */
+header nav ul li a:hover {
+  text-decoration: overline;
+  /* hover時的樣式，上底線 */
+  color: rgb(131, 80, 16);
+  font-weight: 1000;
+}
+
+/* 修正潛點介紹的父hover */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: #09777d;
+  font-size: 20px;
+}
+
+.dropdown:hover {
+  text-decoration: overline;
+  color: rgb(131, 80, 16);
+  cursor: pointer;
+  /* font-weight: 1000; */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fcfdfd;
+  padding: 0px;
+  padding-top: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+main section.backImage {
+  min-height: 90vh;
+  width: 100%;
+  background-image: url(front_page_Images/ocean.png);
+  background-size: cover;
+  background-position: center;
+  margin: 1rem 0rem;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main section.backImage h3 {
+  font-size: 2.75rem;
+  color: white;
+  margin: 1rem 0rem;
+}
+
+main section.backImage div.filter {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  min-height: 90vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+main section.backImage div.textFilter {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  min-height: 10vh;
+  padding: 1.25rem;
+}
+
+main section.backImage button.start {
+  background: linear-gradient(-72deg, rgb(242, 174, 48), rgb(207, 221, 160));
+  /* 多種顏色漸層變化 開始變化角度deg, 顏色1, 顏色2 */
+  padding: 0.75rem 1.5rem;
+  font-size: 1.35rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+main section.backImage button a {
+  text-decoration: none;
+}
+
+main section.second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0rem;
+  margin-bottom: 6rem;
+}
+
+main section.second h2:nth-child(1) {
+  margin: 16px 0px 0px 0px;
+}
+
+main section.second h2:nth-child(2) {
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+main section.second h2:nth-child(3) {
+  color: #09777d;
+  margin-bottom: 1.3rem;
+}
+
+main section.second section.cards {
+  display: flex;
+  width: 80%;
+  min-height: 75vh;
+  flex-wrap: wrap;
+}
+
+main section.second section.cards div.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  flex: 1 1 300px;
+}
+
+main section.second section.cards div.card div.image-container {
+  overflow: hidden;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+}
+
+main section.second section.cards div.card div.image-container img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+main section.second section.cards div.card div.image-container img:hover {
+  transform: scale(1.4);
+}
+
+main section.second section.cards div.card h4 {
+  margin: 1rem 0rem;
+  font-size: 2rem;
+}
+
+main section.second section.cards div.card p {
+  font-size: 1.1rem;
+}
+
+main section.second section.cards div.card a {
+  margin: 1rem 0rem;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  background-color: #09777d;
+  color: white;
+  border-radius: 1rem;
+  transition: all 1s;
+  font-size: 1.25rem;
+}
+
+main section.second section.cards div.card a:hover {
+  background-color: rgb(239, 179, 68);
+  color: #403f3d;
+}
+
+main footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 40vh;
+  justify-content: space-evenly;
+  /* margin-top: 6rem; */
+}
+
+main footer div.logo {
+  display: flex;
+  align-items: center;
+}
+
+main footer div.logo img {
+  width: 2.5vw;
+  height: 2.5vw;
+  padding: 10px;
+}
+
+main footer nav {
+  width: 50%;
+}
+
+main footer nav ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+}
+
+main footer nav ul li a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 1.25s;
+}
+
+main footer nav ul li a:hover {
+  text-decoration: overline;
+  /* color: bisque; */
+  color: rgb(255, 140, 0);
+}
+
+main footer section.links a {
+  margin: 0rem 1rem;
+}
+
+main footer section.links a img {
+  width: 3vw;
+  height: 3vw;
+}
+
+/* section.links .lineicon {
+  height: 80px;
+  width: 80px;
+} */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f9f6f6;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(165, 163, 163);
+}

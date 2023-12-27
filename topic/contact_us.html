@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡我們 | Contact Us</title>
+    <link rel="stylesheet" href="contact_us.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <!-- 這裡要放一張logo圖 -->
+            <img src="front_page_Images/snorkel-gear.png" alt="">
+            <h1>大海旅人 | 潛水裝備租借 | Diving | Rent</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="front_page.html">首頁</a></li>
+                <li><a href="freediving.html">自由潛水</a></li>
+                <li><a href="scuba_diving.html">水肺潛水</a></li>
+                <li class="dropdown">潛點介紹
+                    <ul class="dropdown-content">
+                        <li><a href="northeast_corner.html">東北角</a></li>
+                        <li><a href="hengchun.html">恆春</a></li>
+                    </ul>
+                </li> <!-- 潛點介紹裡要再加一個列表，東北角&恆春 -->
+                <li><a href="contact_us.html">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content">
+                <h1>無際的大海中很高興認識你</h1>
+                <p>若您有租借需求或任何相關問題</p>
+                <p>請點擊網頁底下的LINE與我們聯繫</p>
+                <p>也歡迎來信並留下您的資料與疑問</p>
+                <p>我們將會有專人盡快與您聯繫！</p>
+                <P>感謝您!</P>
+            </div>
+            <div class="formtxt">
+                <form action="" name="form1">
+                    <label class="name" for="name">姓名：</label>
+                    <input type="text" name="name" id="name" size="30" minlength="2" maxlength="4" placeholder="">
+
+                    <br>
+
+                    <label class="phone" for="phone">聯絡電話：</label>
+                    <input type="tel" name="phone" id="phone" size="30" minlength="10" maxlength="10" placeholder="請輸入手機號碼">
+
+                    <br>
+
+                    <label class="mail" for="mail">電子信箱：</label>
+                    <input type="email" name="email" id="mail" size="30">
+
+                    <br>
+
+                    <label class="question" for="question">詢問內容：</label>
+
+
+                    <textarea name="question" id="question" cols="50" rows="10"></textarea>
+
+                    <div class="btn">
+                        <input type="submit" value="確認送出" class="btn_" id="btn">
+                        <!-- <button type="submit" class="btn_" id="btn">確認送出</button> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- 頁面底下 -->
+        <footer>
+            <div class="logo">
+                <!-- 這裡放一張logo圖 -->
+                <img src="front_page_Images/snorkel-gear.png" alt="">
+                <h1>大海旅人 | 潛水裝備租借服務</h1>
+            </div>
+
+            <nav class="footer">
+                <ul>
+                    <li><a href="front_page.html">Home</a></li>
+                    <li><a href="freediving.html">Freediving</a></li>
+                    <li><a href="scuba_diving.html">Scuba Diving</a></li>
+                    <li><a href="hengchun.html">Diving Sites</a></li>
+                    <li><a href="contact_us.html">Contact us</a></li>
+                </ul>
+            </nav>
+
+            <section class="links">
+                <a href="#">
+                    <img src="front_page_Images/facebookIcon.png" alt="Facebook">
+                </a>
+                <a href="#">
+                    <img src="front_page_Images/instragmIcon.png" alt="Instergram">
+                </a>
+                <a href="#">
+                    <img src="front_page_Images/lineicon.png" alt="Line">
+                </a>
+            </section>
+        </footer>
+    </main>
+    <script src="contact.js"></script>
+</body>
+
+</html>
